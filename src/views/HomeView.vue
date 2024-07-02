@@ -1,18 +1,14 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <ConnectWallet />
+  <GetSha />
+  <DocPanel />
+  <BlockUtilities />
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script setup>
+import BlockUtilities from "@/components/ BlockUtilities.vue";
+import DocPanel from "@/components/DocPanel.vue";
+import ConnectWallet from "@/components/ConnectWallet.vue";
+import GetSha from "@/components/GetSha.vue";
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
 </script>
